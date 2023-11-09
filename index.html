@@ -1,49 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="shortcut icon" href="" type="image/x-icon">
     <!-- google font -->
+
     <!-- fontawesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- style -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./imagenes/metalurgica.png" type="image/x-icon">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>MetalurgicaRuiz</title>
 </head>
+
 <body>
-    
     <header>
-        <!-- <img src="" alt=""> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <img src="./imagenes/metalurgica.png" alt="logo" class="animate__animated animate__bounce animate__repeat-2">
         <nav>
             <ul>
-                <li><a href="#">HOME</i></a></li>
-                <li><a href="#">ABOUT</i></a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="">Inicio</i></a></li>
+                <!-- <li><a href="#">ABOUT</i></a></li> -->
+                <li><a href="">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Inicio</h1>
-        <h2 class="class">Informacion de la Empresa</h2>
-        <h2 class="title">Que Trabajos Realizamos</h2>
-        <h3 class="class">Galeria</h3>
-    <h2 class="title">Comunicate con Nosotros</h2>
-        <h3 class="title">Contacto</h3>
-        <h3 class="class">Direccion</h3>
-        <h3 class="class">Horario de Atencion</h3>
+        <h1>Metalurgica Ruiz</h1>
+        <h2 class="info">Informacion de la Empresa</h2>
+        <p>Ofrecemos confianza, dedicacion y buena terminacion en cada trabajo que realizamos</p>
+        <p>Trabajamos acero inoxidable y acero comun</p>
+        <h3 class="info">Nuestros medios de pago</h3>
+        <ul>
+            <li>
+                <p>efectivo</p>
+                <p>mercado pago</p>
+                <p>deposito bancario</p>
+            </li>
+        </ul>
+        <h2 class="trabajo">Que Trabajos Realizamos</h2>
+        <h3 class="galeria">Galeria</h3>
+        <section class="carrusel">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./imagenes/descarga.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./imagenes/images.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./imagenes/metalurgica.jpg" alt=""></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <div class="autoplay-progress">
+                    <svg viewBox="0 0 48 48">
+                        <circle cx="24" cy="24" r="15"></circle>
+                    </svg>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+        <section class="contacto">
+            <h1 class="">Comunicate con Nosotros</h1>
+            <h3>Contacto</h3>
+            <p>261-5734136</p>
+            <button class="numero">Llamar</button>
+            <h3>Direccion</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d837.0194501811553!2d-68.83861473045165!3d-32.94895527295384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0b12421dc237%3A0x72fc0be217600789!2sMartinez%20de%20Rosas%20940%2C%20M5501%20Godoy%20Cruz%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1699539159121!5m2!1ses!2sar" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Calle: Martinez de rosas 940</p>
+            <p>M5501 Godoy Cruz</p>
+            <p>Mendoza</p>
+            <h3>Horario de Atencion</h3>
+            <div class="horario">
+                <p>Lun: 8:00 a. m. – 18:00 p. m.</p>
+                <p>Mar: 8:00 a. m. – 18:00 p. m.</p>
+                <p>Mié: 8:00 a. m. – 18:00 p. m.</p>
+                <p>Jue: 8:00 a. m. – 18:00 p. m.</p>
+                <p>Vie: 8:00 a. m. – 18:00 p. m.</p>
+                <p>Sáb: 8:00 a. m. – 12:30 p. m.</p>
+                <p>Dom: Cerrado</p>
+            </div>
+        </section>
+
     </main>
     <footer>
+        <a href="#top">
+            <button>
+                <div class="text">
+                    <span>Back</span>
+                    <span>to</span>
+                    <span>top</span>
+                </div>
+                <div class="clone">
+                    <span>Back</span>
+                    <span>to</span>
+                    <span>top</span>
+                </div>
+                <svg width="20px" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="r ound" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+            </button>
+        </a>
         <nav>
             <ul>
-                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li class="icons-social-media">
+                    <a href="" id="instagram"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li class="icons-social-media">
+                    <a id="facebook" href=""><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li class="icons-social-media">
+                    <a id="whatsapp" href=""><i class="fa-brands fa-whatsapp"></i></a>
+                </li>
             </ul>
         </nav>
         <p>Todos Los Derechos Reservados</p>
     </footer>
 
 </body>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+    const progressCircle = document.querySelector(".autoplay-progress svg");
+    const progressContent = document.querySelector(".autoplay-progress span");
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2300,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        },
+        on: {
+            autoplayTimeLeft(s, time, progress) {
+                progressCircle.style.setProperty("--progress", 1 - progress);
+                progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+            }
+        }
+    })
+</script>
+
 </html>
