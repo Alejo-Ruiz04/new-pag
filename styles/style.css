@@ -1,6 +1,7 @@
 /* GLOBALES */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap');
 @import url(./header.css);
 @import url(./swipers.css);
 @import url(./button.css);
@@ -20,19 +21,32 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background-image: url(../imagenes/fondo.jpg);
+    background-size: cover;
+    backdrop-filter: blur(1.5px);
 }
 
 ul {
-    list-style: none;
+    list-style:none;
 }
 
 a {
     color: unset;
-    text-decoration: none;
+    text-decoration:none;
+}
+
+.pagos{
+    list-style: disc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 35px;
+    font-weight: 300px;
+    text-decoration: underline;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,7 +54,8 @@ h1 {
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 25px;
+    text-decoration: underline;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,8 +63,9 @@ h2 {
 }
 
 h3 {
-    font-size: 15px;
-    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    text-decoration: underline;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,8 +78,8 @@ h4 {
 }
 
 p {
-    font-size: 15px;
-    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,8 +96,6 @@ html:root {
 }
 
 .icons-social-media {
-
-
     transition: 300ms all ease-in-out;
     position: relative;
 }
@@ -105,7 +119,6 @@ html:root {
 #instagram:hover {
     background-color: rgb(144, 54, 54);
 }
-
 
 #whatsapp:hover {
     background-color: rgb(108, 241, 96);
