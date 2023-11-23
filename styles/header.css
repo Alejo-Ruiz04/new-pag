@@ -20,3 +20,16 @@ header ul{
     flex-wrap: wrap;
     transition: all 2s;
 }
+
+header .burger{
+    display: none;
+}
+
+@media (max-width: 600px){
+    header section{
+        display: none;
+    }
+    header .burger{
+        display: block;
+    }
+}

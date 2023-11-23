@@ -6,8 +6,8 @@
 }
 
 .horario {
-    width: 30%;
-    height: 50%;
+    width: 50%;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,11 +17,11 @@
     position: relative;
 }
 
-.numero{
-    color: #010101;
-    font-size: 15px;
-    background-color: #4158cc;
-    border-radius: 5px;
-    padding: 5px;
-    transition: all .1s;
+@media (max-width: 590px){
+    .horario{
+        width: 90%;
+    }
+    .direccion{
+        width: 90%;
+    }
 }

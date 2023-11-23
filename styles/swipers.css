@@ -1,5 +1,5 @@
 .swiper {
-    width: 400px;
+    width: 40%;
     height: 400px;
 }
 
@@ -47,4 +47,10 @@
     stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
     stroke-dasharray: 125.6;
     transform: rotate(-90deg);
+}
+
+@media (max-width: 720px){
+    .swiper{
+        width: 90%;
+    }
 }
