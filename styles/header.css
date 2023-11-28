@@ -14,18 +14,14 @@ header img{
     height: 50px;
 } 
 
-header ul{
+header nav{
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
     transition: all 2s;
 }
 
-header .burger{
-    display: none;
-}
-
-@media (max-width: 600px){
+/* @media (max-width: 600px){
     header section{
         display: none;
     }
@@ -33,3 +29,4 @@ header .burger{
         display: block;
     }
 }
+ */

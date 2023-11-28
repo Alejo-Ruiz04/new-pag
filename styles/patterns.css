@@ -1,0 +1,6 @@
+.separador{
+    height: 50px;
+    background: radial-gradient(circle, #2C6BF5 40%, transparent 41%);
+    background-size: 1em 1em;
+    opacity: 1
+}

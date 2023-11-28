@@ -25,38 +25,52 @@
     <header>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
         <img src="./imagenes/metalurgica.png" alt="logo" class="animate__animated animate__bounce animate__repeat-2">
-        
-        <i class="fa-solid fa-burger burger"></i>
-        <section>
+        <div>
             <nav>
                 <a href="#top">Inicio</i></a>
+                <a href="#contacto">Contacto</i></a>
             </nav>
-        </section>
+        </div>
 
     </header>
     <main>
-        <h1>Metalurgica Ruiz</h1>
-        <h2 class="info">Informacion de la Empresa</h2>
-        <ul>
-            <li>
-                <p>Ofrecemos confianza, dedicacion y buena terminacion en cada trabajo que realizamos</p>
-                <p>Trabajamos acero inoxidable y acero comun</p>
-            </li>
-        </ul>
-        <h3 class="info">Nuestros medios de pago</h3>
-        <ul class="pagos">
-            <li>
-                Efectivo
-            </li>
-            <li>
-                Mercado Pago
-            </li>
-            <li>
-                Deposito Bancario
-            </li>
-        </ul>
-        <h2 class="trabajo">Que Trabajos Realizamos</h2>
-        <h3 class="galeria">Galeria</h3>
+        <section class="general">
+            <h1>Metalurgica Ruiz</h1>
+            <h2 class="info">Informacion de la Empresa</h2>
+            <ul>
+                <li>
+                    <p>Ofrecemos confianza, dedicacion y buena terminacion en cada trabajo que realizamos</p>
+                    <p>Trabajamos acero inoxidable y acero comun</p>
+                    <p>Tenemos 15 años de experiencia en la industria</p>
+                    <p>Realizamos facturas A</p>
+                </li>
+            </ul>
+        </section>
+
+        <div class="separador"></div>
+
+        <section class="general">
+
+            <h3 class="info">Nuestros medios de pago</h3>
+            <ul class="pagos">
+                <li>
+                    <p>Efectivo</p>
+                </li>
+                <li>
+                    <p>Mercado Pago</p>
+                </li>
+                <li>
+                    <p>Deposito Bancario</p>
+                </li>
+            </ul>
+        </section>
+        <div class="separador"></div>
+
+        <section class="general">
+            <h2 class="trabajo">Que Trabajos Realizamos</h2>
+            <h3 class="galeria">Galeria</h3>
+
+        </section>
         <section class="carrusel">
             <!-- Swiper -->
             <div class="swiper mySwiper">
@@ -78,29 +92,39 @@
                 </div>
             </div>
         </section>
-        <section class="contacto">
-            <h1 class="">Comunicate con Nosotros</h1>
-            <h3>Contacto</h3>
-            <p>261-5734136</p>
-            <h3>Direccion</h3>
+
+        <div class="separador"></div>
+
+        <section class="general full">
+            <h3>¿Donde encontrarnos?</h3>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d837.0194501811553!2d-68.83861473045165!3d-32.94895527295384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0b12421dc237%3A0x72fc0be217600789!2sMartinez%20de%20Rosas%20940%2C%20M5501%20Godoy%20Cruz%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1699539159121!5m2!1ses!2sar"
                 width="50%" height="450" style="border:0.5;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade" class="direccion"></iframe>
-            <p>Calle: Martinez de rosas 940</p>
-            <p>M5501 Godoy Cruz</p>
-            <p>Mendoza</p>
+            <a target="_blank"
+                href="https://www.google.com/maps?ll=-32.948956,-68.837971&z=18&t=m&hl=es&gl=AR&mapclient=embed&q=Martinez+de+Rosas+940+M5501+Godoy+Cruz+Mendoza">
+                <strong>Calle: Martinez de rosas 940 <br> M5501 Godoy Cruz <br> Mendoza</strong>
+            </a>
+        </section>
+
+        <div class="separador"></div>
+
+        <section class="general">
+            <h1>Comunicate con Nosotros</h1>
+            <p>Para tener mas informacion llamar al numero:</p>
+            <a href="#">
+                <p class="numero">261-5734136</p>
+            </a>
+        </section>
+        <section id="contacto" class="general full">
             <h3>Horario de Atencion</h3>
             <div class="horario">
-                <p>Lun: 8:00 a. m. – 18:00 p. m.</p>
-                <p>Mar: 8:00 a. m. – 18:00 p. m.</p>
-                <p>Mié: 8:00 a. m. – 18:00 p. m.</p>
-                <p>Jue: 8:00 a. m. – 18:00 p. m.</p>
-                <p>Vie: 8:00 a. m. – 18:00 p. m.</p>
-                <p>Sáb: 8:00 a. m. – 12:30 p. m.</p>
-                <p>Dom: Cerrado</p>
+                <p>Lunes a Viernes de: 8:00 a. m. – 18:00 p. m.</p>
+                <p>Sáb: 8:00 a. m. – 12:00 p. m.</p>
+                <p>Domingos y Feriados: Cerrado</p>
             </div>
         </section>
+
     </main>
     <footer>
         <a href="#top">
@@ -127,7 +151,8 @@
                     <a href="" id="instagram"><i class="fa-brands fa-instagram"></i></a>
                 </li>
                 <li class="icons-social-media">
-                    <a id="facebook" href="https://www.facebook.com/metalurgica.ruiz.9"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a id="facebook" href="https://www.facebook.com/metalurgica.ruiz.9"><i
+                            class="fa-brands fa-facebook-f"></i></a>
                 </li>
                 <li class="icons-social-media">
                     <a id="whatsapp" href=""><i class="fa-brands fa-whatsapp"></i></a>
