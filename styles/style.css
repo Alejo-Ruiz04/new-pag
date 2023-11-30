@@ -46,49 +46,30 @@ a {
 
 h1 {
     font-size: 35px;
-    font-weight: 300px;
     text-decoration: underline;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 h2 {
     font-size: 28px;
     text-decoration: underline;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
 }
 
 h3 {
     font-size: 23px;
     text-decoration: underline;
     font-family: 'Roboto', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 h4{
     font-size: 10px;
     font-family: 'Roboto', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 p {
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
 }
 
 html:root {
@@ -133,7 +114,6 @@ html:root {
     background-color: rgb(207, 202, 212);
 }
 
-
 section.general{
     display: flex;
     justify-content: center;
@@ -149,3 +129,57 @@ section.general{
 section.general.full{
     max-width: unset;
 }
+
+section.general.horizontal{
+    flex-direction: row;
+    gap: 32px;
+    text-align: start ;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.horizontal .info, .horizontal .info div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.horizontal .info{
+    width: 70%;
+    gap: 32px;
+}
+
+.horizontal .info div p{
+    display: flex;
+}
+
+.horizontal .info div p::before{
+    content: "▶";
+}
+
+.horizontal img{
+    width: 30%;
+    object-fit: contain;
+}
+
+@media (max-width: 600px) {
+    section.general.horizontal{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .horizontal .info, .horizontal .info div{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .horizontal img{
+        width: 80%;
+    }
+}
+

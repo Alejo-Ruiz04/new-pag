@@ -24,7 +24,7 @@
 <body>
     <header>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-        <img src="./imagenes/metalurgica.png" alt="logo" class="animate__animated animate__bounce animate__repeat-2">
+        <img src="./imagenes/metalurgica.png" alt="logo" class="animate__animated animate__bounce animate__repeat-3">
         <div>
             <nav>
                 <a href="#top">Inicio</i></a>
@@ -34,23 +34,26 @@
 
     </header>
     <main>
-        <section class="general">
-            <h1>Metalurgica Ruiz</h1>
-            <h2 class="info">Informacion de la Empresa</h2>
-            <ul>
-                <li>
+
+        <section class="general horizontal">
+            <div class="info">
+                <div>
+                    <h1>Metalurgica Ruiz</h1>
+                    <h2>Informacion de la Empresa</h2>
+                </div>
+                <div>
                     <p>Ofrecemos confianza, dedicacion y buena terminacion en cada trabajo que realizamos</p>
-                    <p>Trabajamos acero inoxidable y acero comun</p>
-                    <p>Tenemos 15 años de experiencia en la industria</p>
-                    <p>Realizamos facturas A</p>
-                </li>
-            </ul>
+                    <p>Trabajamos Acero Inoxidable y Acero Común</p>
+                    <p>Tenemos 25 años de experiencia en la industria</p>
+                    <p>Realizamos factura tipo A</p>
+                </div>
+            </div>
+            <img class="" src="./imagenes/WhatsApp Image 2023-11-30 at 09.43.47.jpeg" alt="">
         </section>
 
         <div class="separador"></div>
 
         <section class="general">
-
             <h3 class="info">Nuestros medios de pago</h3>
             <ul class="pagos">
                 <li>
@@ -75,11 +78,30 @@
             <!-- Swiper -->
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./imagenes/WhatsApp Image 2023-11-30 at 09.29.31.jpeg" alt="">
+                    </div>
                     <div class="swiper-slide"><img src="./imagenes/cañon.jpeg" alt=""></div>
                     <div class="swiper-slide"><img src="./imagenes/cañon 2.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="./imagenes/WhatsApp Image 2023-11-30 at 09.46.34.jpeg" alt="">
+                    </div>
                     <div class="swiper-slide"><img src="./imagenes/cinta eloevadora.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="./imagenes/cinta eloevadora 2.jpeg" alt=""></div>
                     <div class="swiper-slide"><img src="./imagenes/tanques 2.jpeg" alt=""></div>
                     <div class="swiper-slide"><img src="./imagenes/tanques.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="./imagenes/WhatsApp Image 2023-11-30 at 09.01.40 (1).jpeg"
+                            alt=""></div>
+                    <div class="swiper-slide"><img src="./imagenes/WhatsApp Image 2023-11-30 at 09.01.39.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide"><img src="./imagenes/WhatsApp Image 2023-11-30 at 09.01.39 (1).jpeg"
+                            alt=""></div>
+                    <div class="swiper-slide"><img src="./imagenes/WhatsApp Image 2023-11-30 at 09.01.39 (2).jpeg"
+                            alt=""></div>
+                    <div class="swiper-slide"><img src="./imagenes/WhatsApp Image 2023-11-30 at 09.01.40.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide"><img src="./imagenes/WhatsApp Image 2023-11-30 at 09.09.06.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide"><img src="./imagenes/WhatsApp Image 2023-11-30 at 09.11.11.jpeg" alt="">
+                    </div>
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
@@ -112,9 +134,12 @@
         <section class="general">
             <h1>Comunicate con Nosotros</h1>
             <p>Para tener mas informacion llamar al numero:</p>
-            <a href="#">
-                <p class="numero">261-5734136</p>
-            </a>
+
+            <p title="Copiar en el portapapeles" onclick='copyContent("2615734136")' class="numero">261-5734136</p>
+
+            <script>
+                const copyContent = (text) => navigator.clipboard.writeText(text);
+            </script>
         </section>
         <section id="contacto" class="general full">
             <h3>Horario de Atencion</h3>
@@ -173,7 +198,7 @@
         spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
-            delay: 2300,
+            delay: 3000,
             disableOnInteraction: false
         },
         pagination: {

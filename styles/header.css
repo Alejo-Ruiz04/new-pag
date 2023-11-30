@@ -20,13 +20,3 @@ header nav{
     flex-wrap: wrap;
     transition: all 2s;
 }
-
-/* @media (max-width: 600px){
-    header section{
-        display: none;
-    }
-    header .burger{
-        display: block;
-    }
-}
- */
